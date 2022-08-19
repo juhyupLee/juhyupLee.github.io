@@ -8,7 +8,8 @@ tags: [test]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+**첫 포스팅**
+
 
 **Here is some bold text**
 
@@ -24,9 +25,6 @@ Here's a useless table:
 | Two | Three | One |
 
 
-How about a yummy crepe?
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
 It can also be centered!
 
@@ -34,45 +32,24 @@ It can also be centered!
 
 Here's a code chunk:
 
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
+```C++
+	void DataSettiong(int64_t no, eIOCP_LINE pos, DWORD threadid, int64_t socket, DWORD ioCount, int64_t curSession, uint64_t curSessionID, int64_t  recvOL, int64_t  sendOL, LONG snedFlag, int32_t jobType=-1, int32_t jobQCount=-1, eRecvMessageType type= eRecvMessageType::NOTHING, int32_t refCount=-1,int64_t accountNo =-1)
+	{
+		_No = no;
+		_Pos = pos;
+		_ThreadID = threadid;
+		_Socket = socket;
+		_IOCount = ioCount;
+		_CurSession = curSession;
+		_CurSessionID = curSessionID;
+		_RecvOL = recvOL;
+		_SendOL = sendOL;
+		_SendFlag = snedFlag;
+		_JobType = jobType;
+		_JobQCount = jobQCount;
+		_RecvMessageType = type;
+		_PacketRefCount = refCount;
+		_AccountNo = accountNo;
+	}
 ```
 
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
